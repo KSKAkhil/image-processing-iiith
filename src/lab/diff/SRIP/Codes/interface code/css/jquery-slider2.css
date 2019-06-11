@@ -1,0 +1,10 @@
+#sliderContent { position: absolute; left: 0; top: 0; width: 550px ; margin:0; padding:11px; background-color:#2b2b2b; visibility: visible; }
+.viewer { width:549px; margin:0; padding:0; overflow:hidden; position:relative; border:0px solid #898989; }
+.content-conveyor { width:549px; position:relative; }
+.item { width:310px; float:left; text-align:center; image-rendering: -moz-crisp-edges;}
+.item h2 { text-align:center; margin:0 0; font-size:14px;}
+.item dl { margin:0 0; }
+.item dt, .item dd { float:left; width:310px; text-align:center; margin:0; font-size:90%; }
+.item dt { margin-right:0px; }
+.item dd { text-align:center; }
+.item img { border:1px solid #CDCDCD; padding:10px; }
