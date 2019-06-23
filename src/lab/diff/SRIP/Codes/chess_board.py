@@ -15,4 +15,4 @@ def Chess_Board(x1,y1,x2,y2):
         dist=m2
     return dist;
 #example
-#print(Chess_Board(0,0,15,15))
+print(Chess_Board(0,0,15,15))
