@@ -27,4 +27,4 @@ def Isodistance_chessboard(x1,y1,dist):
        for j in range(0,16):
            if (a[i,j]==1):
                print(i,j);
-#Isodistance_chessboard(4,4,3)
+#Isodistance_chessboard(7,7,2)
