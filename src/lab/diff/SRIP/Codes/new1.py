@@ -1,24 +1,27 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Jun 24 16:35:41 2019
+Created on Tue Jun 25 00:42:06 2019
 
 @author: Akhil
 """
-import random
+
+from PIL import Image, ImageOps
 import numpy as np
-#edge dect.
-a= np.zeros((16, 16));
-    #a= np.array([random.sample(range(16),c) for x in range(r)]);
-    #print(a);
-for i in range(0,16):
-    for j in range(0,16):
-         a[i,j] = random.randrange(1, 2);
-         #a[7,7]=0;
-print(a)
+img = Image.open('boom.jpg').convert('L')
+img_inverted = ImageOps.invert(img)
+np_img = np.array(img_inverted)
+np_img[np_img > 0] = 1
+print(np_img)
+#f=open("mat1.txt","b+");
+#f.w
+#f.close();
+print(img);
+img.show();
+
 def Distance_Transform(y):
     r = len(y)
     c = len(list(zip(*y)))
-    #return np.shape(x)
+    #return np.shape(x)//
     x= np.zeros((r, c));
     #print(x);
     #print(r);
@@ -38,4 +41,6 @@ def Distance_Transform(y):
 
          
          
-print(Distance_Transform(a));
+print(Distance_Transform(np_img));
+i= Image.fromarray(Distance_Transform(np_img));
+i.save('new2.BMP');
