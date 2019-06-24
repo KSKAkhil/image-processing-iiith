@@ -1,6 +1,6 @@
 import cv2
 def main():
-     img= cv2.imread(r"C:\Users\Akhil\srip\image-processing-iiith\src\lab\images\BW_liz.BMP")
+     img= cv2.imread(r"C:\Users\Akhil\srip\image-processing-iiith\src\lab\1.png")
      print(img)
      cv2.imshow('image',img)
      cv2.waitKey(0)
