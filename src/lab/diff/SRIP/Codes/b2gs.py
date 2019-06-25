@@ -12,8 +12,9 @@ a= np.zeros((16, 16));
     #print(a);
 for i in range(0,16):
     for j in range(0,16):
-         a[i,j] = random.randrange(1, 2);
-         a[7,7]=0;
+         a[i,j] = random.randrange(2, 3);
+         #a[7,7]=1;
+         #a[3,3]=1;
 print(a)
 def Distance_Transform(y):
     r = len(y)
@@ -34,7 +35,8 @@ def Distance_Transform(y):
                     v1 = min(x[i-1, j-1],x[i, j-1],x[i-1, j]);
                     v2 = min(x[i-1, j+1],x[i+1, j],x[i+1, j+1]);
                     v= min(v1,v2);
-                    y[i,j]= v+1;
+                    if (x[i, j] >= v):
+                        y[i,j]= v+1;
         x=y;
     return y;
          
